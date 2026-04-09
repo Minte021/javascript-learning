@@ -5,7 +5,8 @@ function addNote() {
     li.innerHTML = text;
     
     let btn = document.createElement("button");
-    btn.innerHTML = "Delete Note";
+    btn.id = "delete-btn";
+    btn.innerHTML = "Delete";
 
     document.getElementById("note-list").appendChild(li);
     document.getElementById("note-list").appendChild(btn);
