@@ -56,3 +56,13 @@ ul li {
     cursor: pointer;
     margin-left: 10px;
 }
+
+#edit-btn {
+    width: 70px;
+    height: 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
