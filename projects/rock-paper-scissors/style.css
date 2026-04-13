@@ -5,6 +5,12 @@
     justify-content: center;
 }
 
+h1 {
+    font-family: monospace;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
 .score {
     display: flex;
     gap: 130px;
@@ -15,6 +21,8 @@
     border: 2px solid rgb(163, 83, 83);
     padding: 10px;
     border-radius: 5px;
+    font-family: monospace;
+    font-size: 1.3em;
 }
 
 .games {
@@ -38,4 +46,20 @@
 .footer-msg {
     display: flex;
     flex-direction: column;
+}
+
+.footer-msg p {
+    font-family: monospace;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.footer-msg button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }

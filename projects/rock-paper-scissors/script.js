@@ -25,3 +25,13 @@ function playGame(button) {
         computerScore++;
     }
 }
+
+let clearButton = document.getElementById("clear-all");
+clearButton.addEventListener("click", function() {
+    humanScore = 0;
+    computerScore = 0;
+    let youScore = document.getElementById("you");
+    youScore.innerText = `You: 0`;
+    let computerScoreElement = document.getElementById("computerChoice");
+    computerScoreElement.innerText = `Computer: 0`;
+});
