@@ -1,9 +1,17 @@
+.whole-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .mainContainer {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid lightgrey;
     width: fit-content;
     padding: 10px;
+    border-radius: 5px;
 }
 
 .screenArea {
@@ -29,7 +37,7 @@
 }
 
 .btn-container button {
-    padding: 10px;
+    padding: 15px;
     margin: 5px;
     font-size: 25px;
     border: none;
@@ -45,4 +53,5 @@
     background-color: rgb(98, 218, 98);
     color: white;
     border-radius: 5px;
+    grid-row: span 2;
 }

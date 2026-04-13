@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="whole-screen">
     <div class="mainContainer">
         <div class="screenArea">
             <input type="text" id="screen" disabled>
@@ -28,10 +29,11 @@
             <button class="nums" onclick="addToScreen('2')">2</button>
             <button class="nums" onclick="addToScreen('3')">3</button>
             <button class="operators" span="2" id="equal-sign" onclick="calculate()">=</button>
-            <button class="operators" onclick="addToScreen('%')">%</button>
+            <button class="operators" onclick="calculatePercent()">%</button>
             <button class="nums" onclick="addToScreen('0')">0</button>
             <button class="operators" onclick="addToScreen('.')">.</button>
         </div>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>
