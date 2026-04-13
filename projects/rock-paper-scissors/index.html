@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main-container">
         <h1>Rock Paper Scissors</h1>
         <div class="scores-container">
-            <ul id="score">
-
+            <ul class="score">
+                <li id="you">You: 0</li>
+                <li id="computerChoice">Computer: 0</li>
             </ul>
         </div>
         <div class="games">
-            <div><img src=".\images/rock.png" alt="Rock"></div>
-            <div><img src=".\images/paper.png" alt="Paper"></div>
-            <div><img src=".\images/scissors.png" alt="Scissors"></div>
+            <button onclick="playGame(this)" id="rock"><img src=".\images/rock.png" alt="Rock"></button>
+            <button onclick="playGame(this)" id="paper"><img src=".\images/paper.png" alt="Paper"></button>
+            <button onclick="playGame(this)" id="scissors"><img src=".\images/scissors.png" alt="Scissors"></button>
         </div>
         <div class="footer-msg">
             <p>Choose Your weapon!</p>
@@ -25,6 +27,6 @@
     </div>
     
 
-<!--<script src="script.js"></script> -->
+<script src="script.js"></script>
 </body>
 </html>
