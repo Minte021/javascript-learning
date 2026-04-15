@@ -6,23 +6,22 @@ function playGame(button) {
     let computerChoice = choices[Math.floor(Math.random() * 3)];
     let humanChoice = button.id;
 
-    let youScore = document.getElementById("you");
-    youScore.innerText = `You: => ${humanChoice} & score ${humanScore} `;
-    let computerScoreElement = document.getElementById("computerChoice");
-    computerScoreElement.innerText = `Computer => ${computerChoice} & scores ${computerScore} `;
-    if (humanChoice === computerChoice) {
-        humanScore += 0;
-        computerScore += 0;
+    if (humanChoice !== computerChoice) {
+        if ((humanChoice === "rock" && computerChoice === "scissors") ||
+            (humanChoice === "paper" && computerChoice === "rock") ||
+            (humanChoice === "scissors" && computerChoice === "paper")) {
+            humanScore++;
+            }
+            else {
+            computerScore++;
+            }
     }
+    updateUI(humanChoice, computerChoice);
+}
 
-    else if ((humanChoice === "rock" && computerChoice === "scissors") ||
-             (humanChoice === "paper" && computerChoice === "rock") ||
-             (humanChoice === "scissors" && computerChoice === "paper")) {
-        humanScore++;
-    }
-    else {
-        computerScore++;
-    }
+function updateUI(humanChoice, computerChoice) {
+    document.getElementById("you").innerText = `You: ${humanScore} (You chose ${humanChoice})`;
+    document.getElementById("computerChoice").innerText = `Computer: ${computerScore} (Computer chose ${computerChoice})`;
 }
 
 let clearButton = document.getElementById("clear-all");
