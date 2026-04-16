@@ -1,9 +1,12 @@
 body {
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    background-color: lightseagreen;
     color: white;
 }
 .game-container {
     border: 1px solid white;
+    border: none;
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
@@ -13,8 +16,39 @@ body {
 }
 
 div {
-    border: 1px solid white;
+    border: 3px solid white;
     width: 100px;
     height: 100px;
     display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+}
+
+.reset-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: lightseagreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background-color: lightgray;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 85px;
+    font-family: monospace;
+    font-weight: bold;
 }
