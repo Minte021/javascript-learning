@@ -1,0 +1,16 @@
+.game-container {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    width: fit-content;
+    height: fit-content;
+    margin: 20px auto;
+}
+
+div {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
