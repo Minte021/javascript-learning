@@ -43,4 +43,15 @@ function checkWin() {
             }
         alert(`${currentPlayer} wins!`);
     }
+
+    else if (r1 !== '' && r2 !== '' && r3 !== '' && c1 !== '' && c2 !== '' && c3 !== '' && d1 !== '' && d2 !== '' && d3 !== '') {
+        alert("It's a draw!");
+    }
+}
+
+function reset() {
+    const cells = document.querySelectorAll(".cell");
+    cells.forEach(cell => {
+        cell.textContent = '';
+    });
 }
