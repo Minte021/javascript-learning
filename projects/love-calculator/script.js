@@ -11,7 +11,7 @@ function calculateLove() {
   } else if (name1 === "" || name2 === "") {
     percent = 0;
   }
-  document.getElementById("result").innerHTML = percent;
+  document.getElementById("result").innerHTML = percent + "%";
   document.getElementById("name1").value = "";
   document.getElementById("name2").value = "";
 }

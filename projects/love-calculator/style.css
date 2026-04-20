@@ -45,3 +45,10 @@ h1 {
   font-size: 16px;
   cursor: pointer;
 }
+
+#result {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #e91e63;
+  font-weight: bold;
+}
