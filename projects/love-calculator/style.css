@@ -1,11 +1,47 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f8c8dc;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f8c8dc;
+  padding: 20px;
 }
 
 h1 {
-    color: #e91e63;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #e91e63;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.txt-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.txt-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.txt-area label {
+  color: #e91e63;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.txt-area input {
+  padding: 10px;
+  border: 2px solid #e91e63;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#calculateBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }

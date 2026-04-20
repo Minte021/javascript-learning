@@ -1,12 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Love Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Love Calculator</h1>
-</body>
+
+    <div class="txt-container">
+      <div class="txt-area">
+        <label for="name1">Your Name:</label>
+        <input type="text" id="name1" placeholder="Enter your name" />
+      </div>
+      <div class="txt-area">
+        <label for="name2">Partner's Name:</label>
+        <input type="text" id="name2" placeholder="Enter partner's name" />
+      </div>
+    </div>
+    <button id="calculateBtn">Calculate Love Percentage</button>
+    <div id="result"></div>
+  </body>
 </html>
