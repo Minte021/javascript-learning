@@ -1,0 +1,35 @@
+body {
+  justify-items: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(62, 59, 59);
+}
+
+img {
+  width: 200px;
+}
+
+.diceContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.player {
+  font-size: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(62, 59, 59);
+}
+
+#result {
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(62, 59, 59);
+}

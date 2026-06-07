@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dice</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Refresh Me</h1>
     <div class="diceContainer">
       <div id="player1">
-        <p>Player 1</p>
+        <p class="player">Player 1</p>
         <img
           src="/projects/dice/images/dice6.png"
           alt="dice"
@@ -19,7 +20,7 @@
       </div>
 
       <div id="player2">
-        <p>Player 2</p>
+        <p class="player">Player 2</p>
         <img
           src="/projects/dice/images/dice6.png"
           alt="dice"
@@ -28,6 +29,8 @@
         />
       </div>
     </div>
+
+    <p id="result"></p>
 
     <script src="script.js"></script>
   </body>

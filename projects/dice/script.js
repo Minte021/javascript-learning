@@ -10,3 +10,13 @@ function play() {
 }
 
 play();
+
+const result = document.getElementById("result");
+
+if (num1 > num2) {
+  result.textContent = "Player 1 Wins!";
+} else if (num2 > num1) {
+  result.textContent = "Player 2 Wins!";
+} else {
+  result.textContent = "Draw!";
+}
